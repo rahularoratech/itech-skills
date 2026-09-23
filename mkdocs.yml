@@ -1,0 +1,85 @@
+site_name: itech-skills
+site_description: Command reference and engineering guides for itech-skills
+site_url: https://rahularoratech.github.io/itech-skills/
+repo_url: https://github.com/rahularoratech/itech-skills
+repo_name: rahularoratech/itech-skills
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  logo: assets/itech-logo.png
+  favicon: assets/itech-logo.png
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+hooks:
+  - hooks/docs_links.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Commands: commands.md
+  - Engineering:
+      - Ask itech-skills: engineering/ask-itech-skills.md
+      - Code review: engineering/code-review.md
+      - Codebase design: engineering/codebase-design.md
+      - Diagnosing bugs: engineering/diagnosing-bugs.md
+      - Domain modeling: engineering/domain-modeling.md
+      - First release prep: engineering/first-release-prep.md
+      - Grill with docs: engineering/grill-with-docs.md
+      - Implement: engineering/implement.md
+      - Improve codebase architecture: engineering/improve-codebase-architecture.md
+      - Prototype: engineering/prototype.md
+      - Research: engineering/research.md
+      - Resolving merge conflicts: engineering/resolving-merge-conflicts.md
+      - Setup itech-skills: engineering/setup-itech-skills.md
+      - TDD: engineering/tdd.md
+      - To spec: engineering/to-spec.md
+      - To tickets: engineering/to-tickets.md
+      - Triage: engineering/triage.md
+      - Wayfinder: engineering/wayfinder.md
+      - Wizard: engineering/wizard.md
+  - Productivity:
+      - Grill me: productivity/grill-me.md
+      - Grilling: productivity/grilling.md
+      - Handoff: productivity/handoff.md
+      - Teach: productivity/teach.md
+      - To questionnaire: productivity/to-questionnaire.md
+      - Wait what: productivity/wait-what.md
+      - Writing for agents: productivity/writing-for-agents.md
