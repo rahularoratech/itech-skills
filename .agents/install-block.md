@@ -1,61 +1,46 @@
 # The canonical install block
 
-One install story, one wording. `README.md`, `.changeset/*`, and every page under `docs/` must say **this** and nothing else. Change it here first, then propagate.
-
-`mattpocock-skills` is listed in **Claude Code's official marketplace** (configured name `claude-plugins-official`, source repo `anthropics/claude-plugins-official`), which every Claude Code install has out of the box. There is no marketplace to add first. Official Anthropic marketplaces have auto-update enabled by default ([discover-plugins](https://code.claude.com/docs/en/discover-plugins)), so "updates arrive automatically" is a true claim, not a hope.
+`README.md` is the user-facing source for install instructions. Keep these commands and claims aligned with it.
 
 ## Claude Code: the plugin
 
-<canonical-block name="claude-code">
+This repository includes its own marketplace manifest. Add the GitHub repository as a marketplace and install the plugin:
 
 ```bash
-claude plugins install mattpocock-skills
+claude plugin marketplace add rahularoratech/itech-skills
+claude plugin install itech-skills@itech-skills
 ```
 
-Or, from inside a session:
+Or, from inside a Claude Code session:
 
 ```
-/plugin install mattpocock-skills
+/plugin marketplace add rahularoratech/itech-skills
+/plugin install itech-skills@itech-skills
 ```
 
-It's in Claude Code's official marketplace, so there's nothing to add first, and updates arrive automatically.
+To refresh the marketplace catalog after a release, run `/plugin marketplace update`.
 
-</canonical-block>
+## Codex and other agents: skills.sh
 
-## Codex, and other agents: skills.sh
-
-The plugin is Claude Code only. Everywhere else, [skills.sh](https://skills.sh/mattpocock/skills) copies editable skill files into the project. Use the whole-set form on `README.md`:
-
-<canonical-block name="skills-sh-whole-set">
+The Claude Code plugin is Claude Code only. Everywhere else, [skills.sh](https://skills.sh/docs) copies editable skill files into the project. Use the whole-set form in `README.md`:
 
 ```bash
-npx skills@latest add mattpocock/skills
+npx skills@latest add rahularoratech/itech-skills
 ```
 
-Pick the skills you want, and which coding agents to install them on. **The installer lets you choose which skills to take: make sure `setup-matt-pocock-skills` is one of them.**
+The installer lets people choose which skills and coding agents to install. Include `setup-itech-skills` when using the engineering skills that depend on per-repo configuration.
 
-</canonical-block>
-
-…and the single-skill form wherever one skill is named on its own. Note that **`docs/` pages are not a consumer of this block**: ai-hero renders the install widget above the body, so a page that writes the commands out duplicates it. See [writing-docs.md](./writing-docs.md).
-
-<canonical-block name="skills-sh-one-skill">
+For one skill:
 
 ```bash
-npx skills@latest add mattpocock/skills --skill=<name>
-```
-
-```bash
+npx skills@latest add rahularoratech/itech-skills --skill=<name>
 npx skills@latest update <name>
 ```
 
-</canonical-block>
-
-`skills@latest` is the pinned spelling in all three. The pages under `docs/` used to carry their own copy of these commands; those blocks are now deleted rather than corrected, because the site renders the install commands itself.
-
 ## The two routes are exclusive
 
-The plugin is a managed, read-only bundle you subscribe to. skills.sh writes files you own and edit. Installing both leaves the user with every skill twice: always say "pick one".
+The plugin is a managed bundle. skills.sh writes files people own and edit. Installing both leaves the same skills installed twice, so choose one route.
 
-## Not the install story
+## Marketplace metadata
 
-`.claude-plugin/marketplace.json` makes the repo its own single-plugin marketplace (`/plugin marketplace add mattpocock/skills`, then `/plugin install mattpocock-skills@mattpocock`). The official listing supersedes it. It is kept as a fallback for installing the repo directly (an unreleased commit, or a fork), and is **not** documented to users.
+`.claude-plugin/marketplace.json` declares this repository's marketplace and plugin. The marketplace name and plugin name are both `itech-skills`.
