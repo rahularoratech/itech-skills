@@ -45,6 +45,7 @@ User-invoked skills run when you select them. Model-invoked skills can also be s
 
 | Command | What it does | Guide |
 | --- | --- | --- |
+| [/create-work-report](productivity/create-work-report.md) | Turns supplied notes into a daily development update and checks completed-task hours. | [Guide](productivity/create-work-report.md) |
 | [/grill-me](productivity/grill-me.md) | Interviews you to resolve a plan or decision without writing project docs. | [Guide](productivity/grill-me.md) |
 | [/handoff](productivity/handoff.md) | Writes a portable handoff for another session, harness, or colleague. | [Guide](productivity/handoff.md) |
 | [/teach](productivity/teach.md) | Teaches a concept over multiple sessions in a learning workspace. | [Guide](productivity/teach.md) |
@@ -62,6 +63,7 @@ User-invoked skills run when you select them. Model-invoked skills can also be s
 
 | Goal | Suggested route |
 | --- | --- |
+| Share a daily development update | /create-work-report |
 | Shape and ship a small idea | /grill-with-docs, then /implement |
 | Plan work across sessions | /grill-with-docs, /to-spec, /to-tickets, /implement, then /code-review |
 | Investigate a difficult bug | /diagnosing-bugs, then /implement and /code-review when a fix is clear |

@@ -76,6 +76,7 @@ nav:
       - Wayfinder: engineering/wayfinder.md
       - Wizard: engineering/wizard.md
   - Productivity:
+      - Create work report: productivity/create-work-report.md
       - Grill me: productivity/grill-me.md
       - Grilling: productivity/grilling.md
       - Handoff: productivity/handoff.md
