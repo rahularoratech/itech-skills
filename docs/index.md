@@ -1,6 +1,6 @@
 # itech-skills
 
-Practical, composable agent skills for engineering and day-to-day work. This site explains all 26 skill commands and links to the full guide for each one.
+Practical, composable agent skills for engineering and day-to-day work. This site explains all 27 skill commands and links to the full guide for each one.
 
 Start here:
 
@@ -16,6 +16,7 @@ Start here:
 | You need help choosing a workflow | [ask-itech-skills](engineering/ask-itech-skills.md) |
 | A difficult bug needs investigation | [diagnosing-bugs](engineering/diagnosing-bugs.md) |
 | You are preparing an inherited or rebranded project for its first release | [first-release-prep](engineering/first-release-prep.md) |
+| You need to share a daily development update | [create-work-report](productivity/create-work-report.md) |
 | You want to see every available command | [Command reference](commands.md) |
 
 The full engineering path is usually: clarify the work, write a spec when it spans sessions, split it into tickets, implement, then review. Smaller changes can go directly to implementation.

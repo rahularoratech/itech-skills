@@ -70,6 +70,7 @@ It configures the issue tracker, triage labels, and documentation locations used
 | Investigate a hard bug | [`diagnosing-bugs`](./skills/engineering/diagnosing-bugs/SKILL.md) |
 | Explore a design question before committing to it | [`prototype`](./skills/engineering/prototype/SKILL.md) |
 | Get interviewed about a non-code decision | [`grill-me`](./skills/productivity/grill-me/SKILL.md) |
+| Turn daily work notes into a progress update | [`create-work-report`](./skills/productivity/create-work-report/SKILL.md) |
 
 ## Common workflows
 
@@ -80,8 +81,9 @@ It configures the issue tracker, triage labels, and documentation locations used
 | Investigate and fix a difficult bug | `diagnosing-bugs` → `implement` → `code-review` |
 | Triage incoming work | `setup-itech-skills` → `triage` |
 | Explore a large codebase improvement | `improve-codebase-architecture`, then `wayfinder` or `to-tickets` |
+| Share a daily development update | `create-work-report` |
 
-## Browse all 26 skills
+## Browse all 27 skills
 
 User-invoked skills run when you select them. Model-invoked skills can also be selected automatically when the task fits. Claude Code plugin commands use the `/itech-skills:` prefix; skills installed with the CLI use the short command name. The [command reference](./docs/commands.md) lists every command and its full guide.
 
@@ -126,6 +128,7 @@ User-invoked skills run when you select them. Model-invoked skills can also be s
 
 | Skill | Purpose |
 | --- | --- |
+| [`create-work-report`](./skills/productivity/create-work-report/SKILL.md) | Turns supplied work notes into a daily development update. |
 | [`grill-me`](./skills/productivity/grill-me/SKILL.md) | Interviews you until the branches of a plan or decision are resolved. |
 | [`handoff`](./skills/productivity/handoff/SKILL.md) | Captures work in a portable handoff for another session or colleague. |
 | [`teach`](./skills/productivity/teach/SKILL.md) | Teaches a concept over multiple sessions in a learning workspace. |

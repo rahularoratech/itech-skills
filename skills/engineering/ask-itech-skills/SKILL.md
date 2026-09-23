@@ -74,6 +74,7 @@ Read [PHASE-BOUNDARIES.md](PHASE-BOUNDARIES.md) for the ordered tree: the five q
 
 Off the main flow entirely.
 
+- **A daily development update from work notes** → **`/create-work-report`**. It formats supplied facts for sharing, calculates completed-task hours, and asks for missing report details. It does not inspect Git or PR data unless asked.
 - **A rebranded or inherited repository's first release** → **/first-release-prep**. It checks identity and release metadata, distinguishing a fresh launch from a migration so versions, history, and attribution get the right treatment.
 - **`/grill-me`**: the same relentless interview as `/grill-with-docs`, but **stateless**: it saves nothing locally and builds no `CONTEXT.md`. Reach for it when you are **not working in a working directory** (sharpening a plan, a design, a piece of writing, anything with no repo under it). If you are in a working directory, use `/grill-with-docs` instead: it runs the same interview and leaves a paper trail, so it is strictly the better one.
 - **`/grilling`** is the interview primitive itself: rounds, the frontier, facts are the agent's job and decisions are yours. `/grill-me` and `/grill-with-docs` are the two named ways in, and `/triage`, `/wayfinder` and `/improve-codebase-architecture` all run it internally. Reach for it directly only when you want the interview with no wrapper around it.
